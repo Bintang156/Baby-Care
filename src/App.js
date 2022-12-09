@@ -1,15 +1,23 @@
 import React from "react";
-import './styles/style.css'
-import './styles/responsive.css'
+import { Route, Routes } from "react-router-dom";
+import BabyCheck from "./pages/BabyCheck";
+import ArticlePage from "./pages/ArticlePage";
+import HomePage from "./pages/HomePage";
+
+import HeaderApp from "./components/HeaderApp";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <p>
-          Welcome To Baby-Care Apps Development Rooms
-        </p>
-      </header>
+      <HeaderApp />
+      <main>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/article" element={<ArticlePage />} />
+          <Route path="/remainder" />
+          <Route path="/babycheck" element={<BabyCheck />} />
+        </Routes>
+      </main>
     </div>
   );
 }

@@ -1,13 +1,132 @@
-.App-header {
-    margin-top: 300px;
-    background-color: aquamarine;
-    width: 40%;
-    margin-left: 30%;
-    border-radius: 30px;
-    padding: 10px;
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+* {
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
-.App-header p {
-    font-size: 40px;
-    text-align: center;
+.app-bar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
 }
+
+.app-bar__navigation {
+    height: 100%;
+}
+
+.app-bar .app-bar__brand img {
+    height: 100px;
+    width: auto;
+}
+
+.app-bar .app-bar__navigation ul {
+    display: flex;
+    margin-right: 30px;
+    padding: 0;
+}
+
+.app-bar .app-bar__navigation ul li{
+    list-style: none;
+}
+
+.app-bar .app-bar__navigation ul li a {
+    display: block;
+  text-decoration: none;
+  padding: 1rem;
+  color: #D0AC8A;
+}
+
+.app-bar__navigation ul li a:hover {
+    color: #FF0B66;
+    transition: all 0.3s ease-in-out;
+}
+
+.app-bar__navigation ul li button {
+    width: 44px;
+    height: 44px;
+    margin-left: 10px;
+    margin-top: 10px;
+    color: rgb(255, 255, 255);
+    border-radius: 50%;
+    border: 2px;
+    background-color: rgb(203, 0, 0);
+}
+
+.app-bar__navigation ul li button:hover {
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+.jumbo {
+    background-image: url('../img/babycaree.jpg');
+    width: 100%;
+    top: 0;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .jumbotron_ {
+    color: #FF0B66;
+    font-size: 50px;
+    font-weight: 500;
+    
+  }
+  .jumbotron__ p {
+    color: #FF0B66;
+  }
+
+
+  
+.Headline{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 40px;
+    padding: 20px;
+    color: #FF0B66;
+    margin: 0;
+   
+   
+    
+}
+
+.Headline_kiri{
+    margin-top: 150px;
+    font-size: 20px;
+    padding: 20px;
+    color: #FF0B66;
+}
+
+.Headline_kanan{
+    width: 100%;
+    margin-left: 20px;
+}
+
+
+
+footer {
+    background-color: #FF0B66;
+    padding: 12px;
+    color: white;
+    text-align: center;
+  }
+
+
+
+ 
+  
