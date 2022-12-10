@@ -24,7 +24,7 @@ const Footer = () => {
           <Column>
             <Heading>About Us</Heading>
             <FooterLink href="#">Aby</FooterLink>
-            <FooterLink href="#">Ansar</FooterLink>
+            <FooterLink href="https://github.com/Ansar23-x">Ansar</FooterLink>
             <FooterLink href="https://github.com/ArifFirmansyah19">Arif</FooterLink>
             <FooterLink href="https://github.com/Bintang156">Bintang</FooterLink>
           </Column>
@@ -38,7 +38,7 @@ const Footer = () => {
           <Column>
             <Heading>Contact Us</Heading>
             <FooterLink href="#"> Mas Aby</FooterLink>
-            <FooterLink href="#"> Mas Ansar</FooterLink>
+            <FooterLink href="https://github.com/Ansar23-x"> Mas Ansar</FooterLink>
             <FooterLink href="https://github.com/ArifFirmansyah19"> Mas Arif</FooterLink>
             <FooterLink href="https://github.com/Bintang156"> Mas Bintang</FooterLink>
           </Column>
