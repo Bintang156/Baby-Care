@@ -2,58 +2,56 @@
 # Header
 --------------------------------------------------------------*/
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 * {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 .app-bar {
-    height: 100px;
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    gap: 10px;
-    position: sticky;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
-    padding: 8px 32px;
-    background-color: rgb(242, 242, 242);
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
 
 .app-bar__navigation {
-    position: static;
-    width: 100%;
-    margin-left: 67%;
+    height: 100%;
 }
 
-.app-bar .app-bar__brand img {
+.app-bar img {
     height: 100px;
-    width: auto;
+    width: 100px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    grid-auto-columns: 10px;
+}
+
+.app-bar .app-bar__navigation ul {
+    display: flex;
+    margin-right: 30px;
+    padding: 0;
 }
 
 .app-bar .app-bar__navigation ul li {
-    float: left;
     list-style: none;
-    text-decoration: none;
-    margin-top: 13px;
 }
 
 .app-bar .app-bar__navigation ul li a {
-    font-family: Tahoma, sans-serif;
-    display: inline-block;
-    list-style: none;
-    padding: 20px;
-    font-size: 1.35em;
+    display: block;
     text-decoration: none;
-    color: black;
-    width: auto;
-    height: 44px;
+    padding: 1rem;
+    color: #D0AC8A;
 }
 
 .app-bar__navigation ul li a:hover {
-    color: rgb(255, 21, 21);
+    color: #FF0B66;
+    transition: all 0.3s ease-in-out;
 }
 
 .app-bar__navigation ul li button {
@@ -61,23 +59,164 @@
     height: 44px;
     margin-left: 10px;
     margin-top: 10px;
-    color: rgb(255, 255, 255);
+    color: rgb(229, 229, 229);
     border-radius: 50%;
     border: 2px;
-    background-color: rgb(203, 0, 0);
+    background-color: #FF0B66;
 }
 
 .app-bar__navigation ul li button:hover {
     color: black;
+    transition: all 0.3s ease-in-out;
 }
 
-.container-check {
+.jumbo {
+    background-image: url('../img/babycaree.jpg');
+    width: 100%;
+    top: 0;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron_ {
+    color: #FF0B66;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.jumbotron__ p {
+    color: #FF0B66;
+}
+
+.Headline {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 40px;
+    padding: 20px;
+    color: #FF0B66;
+    margin: 0;
+}
+
+.Headline_kiri {
+    margin-top: 100px;
+    font-size: 20px;
+    padding: 20px;
+    margin-bottom: 10px;
+    color: #FF0B66;
+}
+
+.Headline_kiri p {
     margin-top: 20px;
 }
 
-.card {
-    padding: 50px;
-    box-shadow: 0 4px 8px 0 rgba(113, 107, 107, 0.2);
+.Headline_kanan {
     width: 100%;
-    height: fit-content;
+    margin-top: 150px;
+    margin-left: 20px;
 }
+
+.Headline_kanan img {
+    width: 100%;
+    margin-top: 300px;
+    margin-left: -20px;
+}
+
+.title_page_article {
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+    color: rgb(33, 31, 31);
+}
+
+.title_page_article h1 {
+    margin-top: 50px;
+}
+
+.title_page_article p {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.footer {
+    margin-top: 1000px;
+}
+
+.article-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 0;
+}
+
+.article-item {
+    margin: 0 10px 18px 10px;
+    box-shadow: 0 4px 8px 0 rgba(113, 107, 107, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.image-article{
+    object-fit: cover;
+}
+.article-item img {
+    width: 100%;
+    height: 300px;
+}
+
+.article-info {
+    padding: 15px;
+}
+
+.title-article {
+    font-size: 22px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.desc-article {
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+}
+
+.babyChcek {
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+.reminder {
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+.search-bar{
+    padding: 20px;
+}
+.search-bar input {
+    display: block;
+  padding: 16px;
+  width: 100%;
+  margin: 8px 0;
+  font-size: 24px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 8px;
+  }
+  
+  .search-bar input::placeholder {
+    color: grey;
+  }
+  
+  .title {
+    text-align: center;
+  }
