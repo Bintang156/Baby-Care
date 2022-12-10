@@ -23,7 +23,7 @@ const Footer = () => {
         <Row>
           <Column>
             <Heading>About Us</Heading>
-            <FooterLink href="#">Aby</FooterLink>
+            <FooterLink href="https://github.com/Abyr14">Aby</FooterLink>
             <FooterLink href="https://github.com/Ansar23-x">Ansar</FooterLink>
             <FooterLink href="https://github.com/ArifFirmansyah19">Arif</FooterLink>
             <FooterLink href="https://github.com/Bintang156">Bintang</FooterLink>
@@ -37,7 +37,7 @@ const Footer = () => {
           </Column>
           <Column>
             <Heading>Contact Us</Heading>
-            <FooterLink href="#"> Mas Aby</FooterLink>
+            <FooterLink href="https://github.com/Abyr14"> Mas Aby</FooterLink>
             <FooterLink href="https://github.com/Ansar23-x"> Mas Ansar</FooterLink>
             <FooterLink href="https://github.com/ArifFirmansyah19"> Mas Arif</FooterLink>
             <FooterLink href="https://github.com/Bintang156"> Mas Bintang</FooterLink>

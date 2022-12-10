@@ -194,14 +194,26 @@
     margin-bottom: 300px;
 }
 
+.logo-reminder{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .reminder {
     text-align: center;
     margin-top: 300px;
     margin-bottom: 300px;
 }
+
+.reminder-title{
+    text-align: center;
+}
+
 .search-bar{
     padding: 20px;
 }
+
 .search-bar input {
     display: block;
   padding: 16px;

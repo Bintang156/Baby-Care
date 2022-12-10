@@ -50,7 +50,7 @@ class Reminder extends Component {
   render() {
     return (
       <div className="App">
-        <img src={picReminder} alt="reminder" />
+        <img className="logo-reminder" src={picReminder} alt="reminder" />
         <div className="reminder-title">
           <h2>Masukkan Apapun Untuk Pengingat</h2>
         </div>
