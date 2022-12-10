@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import "./styles/style.css";
 import "./styles/responsive.css";
+// import "./styles/FooterStyles.css";
 import App from "./App";
 
 const root = createRoot(document.getElementById("root"));

@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.af0bd501.css",
+    "main.js": "/static/js/main.efd5b8e6.js",
+    "static/media/bAY.png": "/static/media/bAY.9ae2871d25104314c2c7.png",
+    "static/media/babycaree.jpg": "/static/media/babycaree.0e1f2935a2cd8d876785.jpg",
+    "static/media/BabyCare.png": "/static/media/BabyCare.c8a4824ce49e96efb973.png",
+    "index.html": "/index.html",
+    "main.af0bd501.css.map": "/static/css/main.af0bd501.css.map",
+    "main.efd5b8e6.js.map": "/static/js/main.efd5b8e6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af0bd501.css",
+    "static/js/main.efd5b8e6.js"
+  ]
+}

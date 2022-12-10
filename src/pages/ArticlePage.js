@@ -1,6 +1,7 @@
 // import React from "react";
 import React, { useEffect, useState } from "react";
 import ArticleList from "../components/ArticleList";
+import  Footer from "../components/Footer";
 
 const ArticlePage = () => {
   const [artikels, setArtikels] = useState([]);
@@ -25,11 +26,17 @@ const ArticlePage = () => {
 
   return (
     <>
-      <div>
+        <div className="title_page_article">
+          <h1>Daftar Artikel Baby Check</h1>
+          <p>Temukan Artikel terupdate setiap harinya sesuai dengan 
+            kebutuhan kesehatan bayi anda</p>
+        </div>
+        <div className="article-list">
         {artikels.map((artikel) => (
           <ArticleList key={artikel.id} {...artikel} />
         ))}
-      </div>
+        </div>
+        <Footer />
     </>
   );
 };

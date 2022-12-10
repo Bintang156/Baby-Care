@@ -1,9 +1,9 @@
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 * {
-    
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
@@ -15,16 +15,20 @@
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: white;
+    background-color: rgb(229, 229, 229);
 }
 
 .app-bar__navigation {
     height: 100%;
 }
 
-.app-bar .app-bar__brand img {
+.app-bar img {
     height: 100px;
-    width: auto;
+    width: 100px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    grid-auto-columns: 10px;
 }
 
 .app-bar .app-bar__navigation ul {
@@ -33,15 +37,15 @@
     padding: 0;
 }
 
-.app-bar .app-bar__navigation ul li{
+.app-bar .app-bar__navigation ul li {
     list-style: none;
 }
 
 .app-bar .app-bar__navigation ul li a {
     display: block;
-  text-decoration: none;
-  padding: 1rem;
-  color: #D0AC8A;
+    text-decoration: none;
+    padding: 1rem;
+    color: #D0AC8A;
 }
 
 .app-bar__navigation ul li a:hover {
@@ -54,7 +58,7 @@
     height: 44px;
     margin-left: 10px;
     margin-top: 10px;
-    color: rgb(255, 255, 255);
+    color: rgb(229, 229, 229);
     border-radius: 50%;
     border: 2px;
     background-color: rgb(203, 0, 0);
@@ -64,9 +68,6 @@
     color: black;
     transition: all 0.3s ease-in-out;
 }
-
-
-
 
 .jumbo {
     background-image: url('../img/babycaree.jpg');
@@ -79,54 +80,120 @@
     text-align: center;
     align-items: center;
     justify-content: center;
-  }
-  
-  .jumbotron_ {
+}
+
+.jumbotron_ {
     color: #FF0B66;
     font-size: 50px;
     font-weight: 500;
-    
-  }
-  .jumbotron__ p {
+    text-align: center;
+}
+
+.jumbotron__ p {
     color: #FF0B66;
-  }
+}
 
-
-  
-.Headline{
+.Headline {
     display: grid;
     grid-template-columns: 1fr 1fr;
     font-size: 40px;
     padding: 20px;
     color: #FF0B66;
     margin: 0;
-   
-   
-    
 }
 
-.Headline_kiri{
-    margin-top: 150px;
+.Headline_kiri {
+    margin-top: 100px;
     font-size: 20px;
     padding: 20px;
+    margin-bottom: 10px;
     color: #FF0B66;
 }
 
-.Headline_kanan{
+.Headline_kiri p {
+    margin-top: 20px;
+}
+
+.Headline_kanan {
     width: 100%;
+    margin-top: 150px;
     margin-left: 20px;
 }
 
+.Headline_kanan img {
+    width: 100%;
+    margin-top: 300px;
+    margin-left: -20px;
+}
 
-
-footer {
-    background-color: #FF0B66;
-    padding: 12px;
-    color: white;
+.title_page_article {
     text-align: center;
-  }
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: sans-serif;
+    color: rgb(33, 31, 31);
+}
 
+.title_page_article h1 {
+    margin-top: 50px;
+}
 
+.title_page_article p {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
 
- 
-  
+.footer {
+    margin-top: 1000px;
+}
+
+.article-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0;
+}
+
+.article-item {
+    margin: 0 10px 18px 10px;
+    box-shadow: 0 4px 8px 0 rgba(113, 107, 107, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 350px;
+}
+
+.article-item img {
+    width: 100%;
+    height: 300px;
+}
+
+.article-info {
+    padding: 15px;
+}
+
+.title-article {
+    font-size: 22px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.desc-article {
+    text-align: justify;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+}
+
+.babyChcek {
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}
+
+.reminder {
+    text-align: center;
+    margin-top: 300px;
+    margin-bottom: 300px;
+}

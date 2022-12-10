@@ -5,11 +5,8 @@ import { Link } from "react-router-dom";
 
 function HeaderApp() {
   return (
-    <>
       <header className="app-bar">
-        <div className="app-bar__brand">
           <img src={babycare} alt="logo-apps" />
-        </div>
         <nav className="app-bar__navigation">
           <ul>
             <li>
@@ -32,7 +29,6 @@ function HeaderApp() {
           </ul>
         </nav>
       </header>
-    </>
   );
 }
 
