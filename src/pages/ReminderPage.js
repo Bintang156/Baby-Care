@@ -8,16 +8,6 @@ import { add_Reminder, remove_Reminder, clear_Reminder } from "../actions";
 import picReminder from "../img/reminder.jpg";
 import Footer from "../components/Footer";
 
-// function Reminder() {
-//   return (
-//     <>
-//     <div className="reminder">
-//       <h2>Fitur Reminder Masih Dalam Tahap Pengembangan</h2>
-//     </div>
-//     <Footer/>
-//     </>
-//   );
-//}
 
 class Reminder extends Component {
   state = {
@@ -28,12 +18,15 @@ class Reminder extends Component {
   render_Reminders = () => {
     const { reminders } = this.props;
     return (
-      <ul className="list-group">
+      <>
+        <div className="container-list-reminder">
+      <center>
+        <ul className="list-group">
         {reminders.map((reminder) => {
           return (
-            <li key={reminder.id} className="list-group-item">
-              <div>{reminder.text}</div>
-              <div>{moment(new Date(reminder.date)).fromNow()}</div>
+              <li key={reminder.id} className="list-group-item">
+              <div> <h1>{reminder.text}</h1></div>
+              <div><p>{moment(new Date(reminder.date)).fromNow()}</p></div>
               <div
                 className="closeIcon btn btn-danger"
                 onClick={() => this.props.remove_Reminder(reminder.id)}
@@ -44,17 +37,23 @@ class Reminder extends Component {
           );
         })}
       </ul>
+      </center>
+      </div>
+      
+      </>
     );
   };
 
   render() {
     return (
       <div className="App">
-        <img className="logo-reminder" src={picReminder} alt="reminder" />
+        <div className="content-page-reminder">
+        <center><img  className="logo-reminder" src={picReminder} alt="reminder" /></center>
         <div className="reminder-title">
           <h2>Masukkan Apapun Untuk Pengingat</h2>
         </div>
-        <input
+        
+        <center><input
           type="text"
           className="input-control form-control"
           placeholder="Masukkan Pengingat"
@@ -74,22 +73,25 @@ class Reminder extends Component {
           dateFormat="MMMM d, yyyy h:mm aa"
           timeCaption="time"
         />
-        <button
+        </center>
+       <center> <button
           onClick={() => {
             this.props.add_Reminder(this.state.text, this.state.date);
             this.setState({ text: "", date: "" });
           }}
-          className="clearReminder btn btn-primary btn-block"
-        >
+          className="Reminder btn btn-primary btn-block">
           Tambah Pengingat
         </button>
+        </center>
         {this.render_Reminders()}
-        <button
+        <center><button
           className="clearReminder btn btn-danger btn-block"
           onClick={() => this.props.clear_Reminder()}
         >
           Bersihkan Pengingat
         </button>
+        </center>
+        </div>
         <Footer />
       </div>
     );

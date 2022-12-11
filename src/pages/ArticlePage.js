@@ -21,7 +21,7 @@ const ArticlePage = () => {
   }, []);
 
   if (artikels.length === 0) {
-    return <h2>Data Api Tidak Ada</h2>;
+    return <center><h2 className="load">Loading...</h2></center>;
   }
 
   return (
